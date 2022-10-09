@@ -1,0 +1,38 @@
+.order__pay {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .promo {
+        input {
+            background-color: transparent;
+        }
+    }
+
+    .popup-cart__wrap {
+        display: none;
+    }
+}
+
+
+@media screen and(min-width:1025px) {
+    .order__pay {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+    }
+}
+
+@media screen and(min-width:1087px) {
+    .order__pay {
+        .popup-cart__wrap {
+            display: grid;
+        }
+    }
+}
+
+@media screen and(min-width:1441px) {
+    .order__pay {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Сами с шарами"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        @@include('html/top-category.html')
+        @@include('html/poster.html')
+        @@include('html/popular-category.html')
+        @@include('html/relevant-category.html', {
+            "title" : "шары на выпускной",
+            "position" : "center"
+        })
+        @@include('html/hits-category.html')
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/modal.html')
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

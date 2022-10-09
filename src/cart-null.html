@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Сами с шарами"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        @@include('html/breadcrumb.html')
+        <section class="container cart-null">
+            <h1 class="title cart__title">корзина</h1>
+            <div class="cart-null__img">
+                <img src="@img/icons/icon-cart-null.svg" alt="">
+            </div>
+            <span class="cart-null__subtitle">В корзине пока <br> ничего нет</span>
+            <a href="catalog.html" title="#" class="btn btn__black">Вернуться к покупкам</a>
+        </section>
+
+        @@include('html/relevant-category.html', {
+            "title" : "Вам может понравиться",
+            "position" : "left"
+        })
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

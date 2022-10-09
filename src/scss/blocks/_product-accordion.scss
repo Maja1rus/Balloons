@@ -1,0 +1,116 @@
+.product-accordion {
+    max-width: 736px;
+}
+
+.product-accordion__title {
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    height: 60px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+
+    border-bottom: 1px solid #F2F2F2;
+
+
+    &:first-child {
+        border-top: 1px solid #F2F2F2;
+    }
+
+    &:hover {
+        color: #9F9F9F;
+
+        &::after,
+        &::before {
+            background-color: #9F9F9F;
+        }
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 1px;
+        background-color: #1A1A1A;
+        right: 0;
+        top: 50%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &::before {
+        transform: rotate(90deg);
+    }
+}
+
+.product-accordion__title.accordion__select {
+    &::before {
+        transform: rotate(0);
+    }
+}
+
+.product-accordion__title.accordion__select+.product-accordion__wrap {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-accordion__title.accordion__select+.product-accordion__items {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.product-accordion__wrap {
+    display: grid;
+    gap: 5px;
+}
+
+.product-accordion__items {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: 300px;
+    padding-bottom: 5px;
+
+    li {
+        border-bottom: 1px solid #F2F2F2;
+        position: relative;
+        padding: 0;
+    }
+
+    span {
+        background-color: #FFF;
+        margin: 0;
+        bottom: -16px;
+        font-size: var(--size-normal-small);
+    }
+}
+
+
+.product-accordion__name {
+    position: relative;
+}
+
+.product-accordion__price {
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.product-accordion__list {
+    margin: 0;
+    padding-left: 20px;
+
+    .product-accordion__text {
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media screen and(min-width:769px) {
+    .product-accordion__title {
+        font-size: var(--size-normal-18);
+    }
+}

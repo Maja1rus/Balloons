@@ -1,0 +1,63 @@
+.product-questions {
+    display: grid;
+    gap: 16px;
+}
+
+.product-questions__title {
+    font-size: var(--size-normal-big);
+    text-transform: uppercase;
+}
+
+.product-questions__btns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    max-width: 736px;
+}
+
+.product-questions__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: var(--size-normal-small);
+    font-weight: var(--font-medium);
+
+    svg {
+        transition: all 0.2s ease-in-out;
+    }
+
+
+    &:first-child {
+        svg {
+            fill: #1A1A1A;
+        }
+    }
+
+    &:last-child {
+        svg {
+            stroke: #1A1A1A;
+            fill: transparent;
+        }
+    }
+
+
+    &:hover {
+        background-color: #1A1A1A;
+        color: var(--color-white);
+
+        &:first-child {
+            svg {
+                fill: var(--color-white);
+            }
+        }
+
+        &:last-child {
+            svg {
+                stroke: var(--color-white);
+            }
+        }
+    }
+}

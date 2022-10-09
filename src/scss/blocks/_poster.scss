@@ -1,0 +1,33 @@
+
+.poster {
+    width: 100%;
+    
+    .swiper-pagination-bullet-active {
+        background-color: #ffffff;
+    }
+}
+.poster__container {
+    width: 100%;
+}
+.poster_wrapper {
+    width: 100%;
+}
+.poster__img {
+    width: 100%;
+    // min-height: 170px;
+    img {
+        margin: 0 auto;
+        object-fit: cover;
+        // min-height: 200px;
+    }
+}
+
+// @media screen and (min-width:1024px) {
+//     .poster__img {
+//         img {
+//             width: 1920px;
+//             height: 650px;
+//         }
+//     }
+
+// }

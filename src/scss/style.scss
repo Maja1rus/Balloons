@@ -1,0 +1,95 @@
+
+// Base
+@import "./base/base.scss";
+@import "./base/fonts";
+@import "./base/variables";
+
+// Blocks
+@import "./blocks/btn";
+@import "./blocks/accordion";
+
+// header
+@import "./blocks/header";
+@import "./blocks/nav-menu";
+@import "./blocks/header-nav";
+@import "./blocks/header-search";
+@import "./blocks/contacts";
+
+@import "./blocks/poster";
+
+// breadcrumb
+@import "./blocks/breadcrumb";
+
+// стили для карточки товара item
+@import "./blocks/item";
+
+// category
+@import "./blocks/top-category";
+@import "./blocks/popular-category";
+@import "./blocks/relevant-category";
+@import "./blocks/hits-category";
+
+// product
+@import "./blocks/product";
+@import "./blocks/product-img";
+@import "./blocks/product-info";
+@import "./blocks/product-accordion";
+@import "./blocks/product-questions";
+@import "./blocks/product-set";
+
+//set-item
+@import "./blocks/set-item";
+
+// count
+@import "./blocks/count";
+
+// popup
+@import "./blocks/popup";
+@import "./blocks/popup-cart";
+@import "./blocks/popup-filter";
+
+// catalog
+@import "./blocks/catalog";
+@import "./blocks/catalog-filter";
+@import "./blocks/catalog-items";
+
+// filter
+@import "./blocks/filter-range";
+@import "./blocks/filter-checkbox";
+@import "./blocks/filter-sorting";
+
+// cart
+@import "./blocks/cart";
+@import "./blocks/cart-null";
+@import "./blocks/cart-product";
+@import "./blocks/cart-buy";
+
+// promo
+@import "./blocks/promo";
+
+// order
+@import "./blocks/order";
+@import "./blocks/order-radio";
+@import "./blocks/order-pay";
+
+//map 
+@import "./blocks/map";
+
+// feedback
+@import "./blocks/feedback";
+
+//deliviry
+@import "./blocks/delivery";
+
+
+// footer
+@import "./blocks/footer";
+@import "./blocks/footer-info-catalog";
+@import "./blocks/footer-bottom";
+
+@import "./blocks/clock-loader";
+
+//modal promo 
+@import "./blocks/modal";
+// Vendors
+@import "./vendors/swiper-js";

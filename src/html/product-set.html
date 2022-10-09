@@ -1,0 +1,46 @@
+<section class="container product-set">
+    <h2 class="title">в набор входят</h2>
+    <span class="product-set__subtitle text-medium">
+        Шары 12 штук
+    </span>
+    <span class="product-set__discription">
+        Здесь вы видите, что входит в комплектацию вашего заказа, по цвету, форме, количеству. Выбранные товары
+        отобразятся в корзине при оформлении заказа.
+    </span>
+
+    <div class="swiper relevant-category__swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                @@include('set-item.html')
+            </div>
+            <div class="swiper-slide">
+                <div class="set-item">
+                    <div class="set-item__img">
+                        <img src="@img/items/item-01.jpg" alt="">
+                        <!-- <img src="@img/set-item/set-item.jpg" alt=""> -->
+                    </div>
+                    <div class="set-item__text">
+                        <span class="set-item__subtitle">30"(76см) GB30 /88 Хром Shiny Gold</span>
+                        <span class="set-item__title">30"(76см) GB30 /88 Хром Shiny Gold</span>
+                    </div>
+                    <div class="set-item__prices">
+                        <span class="set-item__count">2</span>
+                        <span class="item__price">4350</span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                @@include('set-item.html')
+            </div>
+            <div class="swiper-slide">
+                @@include('set-item.html')
+            </div>
+            <div class="swiper-slide">
+                @@include('set-item.html')
+            </div>
+            <div class="swiper-slide">
+                @@include('set-item.html')
+            </div>
+        </div>
+    </div>
+</section>

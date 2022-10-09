@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Сами с шарами"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        @@include('html/breadcrumb.html')
+        <section class="container product">
+            @@include('html/product-img.html')
+            @@include('html/product-info.html')
+        </section>
+        @@include('html/product-set.html')
+        @@include('html/relevant-category.html', {
+            "title" : "Вам может понравиться",
+            "position" : "left"
+        })
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

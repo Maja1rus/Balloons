@@ -1,0 +1,35 @@
+.footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 17px;
+    background-color: #F2F2F2;
+    color: #6A6A6A;
+}
+.footer-bottom__wrap {
+    display: grid;
+    gap: 25px;
+}
+.footer-bottom__item {
+    display: grid;
+    gap: 5px;
+
+    a {
+        color: inherit;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+            color: #FD6C03;
+        }
+    }
+}
+
+@media screen and(min-width:1025px) {
+   .footer-bottom__wrap {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+
+    .footer-bottom__right {
+        text-align: right;
+    }   
+}

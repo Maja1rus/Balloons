@@ -1,0 +1,26 @@
+.contacts {
+    display: grid;
+    gap: 17px;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    font-size: var(--size-subtitle-small);
+}
+
+.contacts__phone {
+    text-decoration: none;
+    color: inherit;
+    font-size: var(--size-normal-big);
+}
+
+.contacts__social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    a {
+        text-decoration: none;
+
+
+    }
+}

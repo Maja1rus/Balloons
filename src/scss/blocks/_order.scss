@@ -1,0 +1,134 @@
+.order {
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.order__title {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.order__wrap {
+    display: grid;
+    align-items: start;
+    gap: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.order-data {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-white);
+}
+
+.order__notice {
+    margin: 0 0 10px 0;
+}
+
+.order__subtitle {
+    display: inline-block;
+    font-size: var(--size-normal-big);
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.order-data__wrap {
+    display: grid;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.order__item {
+    display: grid;
+    gap: 12px;
+}
+
+.order__name {
+    font-weight: var(--font-medium);
+}
+
+.order__required {
+    position: relative;
+
+    &::before {
+        content: '*';
+        position: absolute;
+        right: -10px;
+        color: #EB5757;
+    }
+}
+
+.order__input,
+.order__textarea {
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    padding: 10px;
+    max-width: 418px;
+}
+
+.order__textarea {
+    // height: 200px;
+    resize: none;
+}
+
+.order__discription {
+    font-size: 0.8125rem;
+}
+
+.order-delivery {
+    background-color: var(--color-white);
+    padding: 30px 10px;
+}
+
+.order-delivery__wrap {
+    display: grid;
+    gap: 20px;
+}
+
+
+@media screen and(min-width:671px) {
+    .order-delivery__wrap {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
+
+@media screen and(min-width:769px) {
+    .order__wrap {
+        gap: 30px;
+    }
+    .order-data__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .order__textarea {
+        max-width: 100%;
+    }
+}
+
+
+@media screen and(min-width:1025px) {
+    .order__wrap {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .order__pay {
+        background-color: var(--color-white);
+    }
+}
+
+
+@media screen and(min-width:1441px) {
+    .order-data {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .order-delivery__wrap {
+        justify-content: center;
+    }
+}

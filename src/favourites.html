@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"Сами с шарами"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        @@include('html/breadcrumb.html')
+        <section class="catalog container">
+            <h1 class="catalog__title title">Избранное</h1>
+        </section>
+        @@include('html/catalog-items.html')
+    </main>
+    @@include('html/footer.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

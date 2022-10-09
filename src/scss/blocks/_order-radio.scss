@@ -1,0 +1,84 @@
+.order__radio {}
+
+.order-radio {
+    position: relative;
+    display: grid;
+    align-content: space-between;
+    padding: 14px 10px 14px 14px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    height: 162px;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.order-radio__wrap {
+    display: grid;
+    gap: 10px;
+    padding-left: 44px;
+}
+
+.order-radio__real {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.order-radio__fake {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 0;
+        right: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("../img/icons/icon-radius.svg");
+    }
+}
+
+.order-radio__real:checked+.order-radio__fake {
+
+    border: none;
+
+    &::before {
+        width: 24px;
+        height: 24px;
+        background-image: url("../img/icons/icon-check-black.svg");
+    }
+}
+
+.order__name {}
+
+.order-radio__subtitle {
+    padding-bottom: 5px;
+    font-size: var(--size-normal-small);
+}
+
+.order-radio__price.item__price {
+    text-align-last: left;
+    font-size: 1rem;
+    font-weight: var(--font-regular);
+}
+
+.order-radio__discription {
+    font-size: 0.8125rem;
+}
+
+.order__icons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 180px;
+    column-gap: 9px;
+    row-gap: 19px;
+    padding-top: 9px;
+}

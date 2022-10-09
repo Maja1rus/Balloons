@@ -1,0 +1,27 @@
+<section class="container cart">
+    <h1 class="title cart__title">корзина</h1>
+    <div class="cart__wrap">
+        @@include('cart-product.html')
+        <div class="cart__buy cart-buy">
+              <div>
+                  <form class="cart-buy__promo promo">
+                      <input type="text" class="promo__input" placeholder="Промокод" minlength="3">
+                      <button type="submit" class="btn btn__border promo__btn">Применить</button>
+                  </form>
+                  <span class="promocode_active">Промокод успешно активирован!</span>
+              </div>
+            <div class="cart-buy__price">
+                <span>Сумма заказа</span>
+                <span class="item__price">7500</span>
+                <span>Доставка</span>
+                <span class="item__price">300</span>
+            </div>
+            <div class="cart-buy__summary">
+                <span>итого</span>
+                <span class="item__price">7800</span>
+            </div>
+            <a href="order.html" title="#" class="btn btn__black">оформить заказ</a>
+            <span class="cart-buy__agreement">Оформляя заказ, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" title="#">политикой конфиденциальности</a></span>
+        </div>
+    </div>
+</section>

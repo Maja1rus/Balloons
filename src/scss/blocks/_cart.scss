@@ -1,0 +1,38 @@
+.cart__title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.cart__wrap {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+
+@media screen and(min-width:769px) {
+    .cart__title {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .cart__wrap {
+        padding-bottom: 60px;
+    }
+}
+
+@media screen and(min-width:801px) {
+    .cart__wrap {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+
+@media screen and(min-width:1025px) {
+    .cart__wrap {
+        padding-bottom: 120px;
+    }
+}

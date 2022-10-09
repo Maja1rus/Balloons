@@ -1,0 +1,24 @@
+.relevant-category {
+    padding-bottom: 50px;
+
+    .title {
+        padding-bottom: 30px;
+    }
+}
+
+
+.relevant-category__title {
+    &--left {
+        text-align: left;
+    }
+
+    &--center {
+        text-align: center;
+    }
+}
+
+@media screen and(min-width:769px) {
+    .relevant-category {
+        padding-bottom: 80px;
+    }
+}

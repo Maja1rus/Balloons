@@ -1,0 +1,216 @@
+<section class="order">
+    <div class="container">
+        <h1 class="order__title title">Оформление заказа</h1>
+    </div>
+
+    <form class="order__wrap form">
+        <div class="order__left">
+            <div class="order__data order-data">
+                <span class="order__subtitle">1. данные получателя</span>
+                <div class="order-data__wrap">
+                    <label class="order__item name-js">
+                        <span class="order__name">Имя получателя
+                            <span class="order__required"></span>
+                        </span>
+                        <input type="text" class="order__input input-check" placeholder="Имя" name="name">
+                    </label>
+                    <label class="order__item phone-js">
+                        <span class="order__name ">Номер телефона
+                            <span class="order__required"></span>
+                        </span>
+                        <input type="text" class="order__input input-check input__phone" placeholder="Номер телефона"
+                            name="phone">
+                    </label>
+                    <!-- <label class="order__item address-js">
+                        <span class="order__name">Адрес доставки
+                            <span class="order__required"></span>
+                        </span>
+                        <textarea class="order__textarea input-check"
+                            placeholder="Номер дома и название улицы" name="address"></textarea>
+                    </label> -->
+                </div>
+                                    <label class="order__item">
+                                        <span class="order__name">Примечание к заказу (необязательно)</span>
+                                        <textarea class="order__textarea" placeholder="Ваш комментарий"
+                                            name="message"></textarea>
+                                    </label>
+                <span class="order__discription">Поля, обязательные для заполнения
+                    <span class="order__required"></span>
+                </span>
+            </div>
+            <div class="order__delivery order-delivery">
+                <span class="order__subtitle">2. Способы доставки</span>
+                <div class="order-delivery__wrap">
+                    <label class="order__radio order-radio">
+                        <div class="order-radio__wrap">
+                            <input type="radio" class="order-radio__real" name="delivery" checked
+                                value="Доставка в черте города">
+                            <span class="order-radio__fake"></span>
+                            <span class="order__name">Доставка в черте города</span>
+                            <span class="order-radio__subtitle">(Тариф согласно зонам доставки)</span>
+                            <span class="order-radio__price item__price">300-500</span>
+                        </div>
+                        <span class="order-radio__discription">Минимальная сумма заказа — 1500 руб</span>
+                    </label>
+                    <label class="order__radio order-radio">
+                        <div class="order-radio__wrap">
+                            <input type="radio" class="order-radio__real" name="delivery" value="Доставка за город">
+                            <span class="order-radio__fake"></span>
+                            <span class="order__name">Доставка за город</span>
+                            <span class="order-radio__subtitle">Индивидуальный расчет, цена зависит от точного
+                                адреса</span>
+                        </div>
+                        <span class="order-radio__discription">Минимальная сумма заказа — 1500 руб</span>
+                    </label>
+                    <label class="order__radio order-radio">
+                        <div class="order-radio__wrap">
+                            <input type="radio" class="order-radio__real" name="delivery" value="Самовывоз">
+                            <span class="order-radio__fake"></span>
+                            <span class="order__name">Самовывоз</span>
+                            <span class="order-radio__subtitle">Бесплатно</span>
+                        </div>
+                        <span class="order-radio__discription">Минимальная сумма заказа — 1500 руб</span>
+                    </label>
+                </div>
+            </div>
+            <div class="order__delivery order-delivery">
+                <span class="order__subtitle">3. Способ оплаты</span>
+                <p class="order__notice">По правилам нашей компании минимальная предоплата 50%.
+                <p class="order__notice"> Остаток вы можете оплатить при получении заказа.</p>
+                <ul class="order__list">
+                    <li>по QR-коду</li>
+                    <li>по ссылке</li>
+                    <li>переводом на карту</li>
+                    <li>по выставленному счету на юр.лицо</li>
+                </ul>
+                <div class="order-delivery__wrap">
+                    <!-- <label class="order__radio order-radio">
+                        <div class="order-radio__wrap">
+                            <input type="radio" class="order-radio__real" name="pay" checked value="Оплата наличными или банковской картой при получении заказа">
+                            <span class="order-radio__fake"></span>
+                            <span class="order__name">Оплата наличными или банковской картой при получении заказа</span>
+                        </div>
+                    </label> -->
+                    <label class="order__radio order-radio">
+                        <div class="order-radio__wrap">
+                            <input checked type="radio" class="order-radio__real" name="pay" value="Оплата онлайн">
+                            <span class="order-radio__fake"></span>
+                            <span class="order__name">Оплата онлайн</span>
+                            <div class="order__icons">
+                                <img src="@img/icons/icon-mastercard.svg" alt="mastercard">
+                                <img src="@img/icons/icon-visa.svg" alt="visa">
+                                <img src="@img/icons/icon-mir.svg" alt="MIR">
+                                <img src="@img/icons/icon-googlepay.svg" alt="googlepay">
+                                <img src="@img/icons/icon-applepay.svg" alt="applepay">
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="order__pay">
+            <div class="popup-cart__wrap">
+                <div class="popup-cart__item">
+                    <div class="popup-cart__img">
+                        <img src="@img/items/item-01.jpg" alt="Набор Happy Halloween">
+                    </div>
+                    <span class="popup-cart__subtitle">Набор Happy Halloween в две строки или в три строки название
+                        название название названиеназвание названиеназвание название</span>
+                    <div class="popup-cart__buy">
+                        <span class="item__price">4350</span>
+                        @@include('count.html')
+                    </div>
+
+                    <div class="popup-cart__options">
+                        <button class="btn item__like popup-cart__btn">
+                            <svg width="24" height="24">
+                                <use xlink:href="img/icons/sprites.svg#icon-like"></use>
+                            </svg>
+                            <span>В избранное</span>
+                        </button>
+                        <button class="btn popup-cart__btn">
+                            <svg width="30" height="30">
+                                <use xlink:href="img/icons/sprites.svg#icon-close"></use>
+                            </svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="popup-cart__item">
+                    <div class="popup-cart__img">
+                        <img src="@img/items/item-02.jpg" alt="Набор Happy Halloween">
+                    </div>
+                    <span class="popup-cart__subtitle">Набор Happy Halloween в две строки или в три строки название
+                        название название названиеназвание названиеназвание название</span>
+                    <div class="popup-cart__buy">
+                        <span class="item__price">4350</span>
+                        @@include('count.html')
+                    </div>
+
+                    <div class="popup-cart__options">
+                        <button class="btn item__like popup-cart__btn">
+                            <svg width="24" height="24">
+                                <use xlink:href="img/icons/sprites.svg#icon-like"></use>
+                            </svg>
+                            <span>В избранное</span>
+                        </button>
+                        <button class="btn popup-cart__btn">
+                            <svg width="30" height="30">
+                                <use xlink:href="img/icons/sprites.svg#icon-close"></use>
+                            </svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="popup-cart__item">
+                    <div class="popup-cart__img">
+                        <img src="@img/items/item-03.jpg" alt="Набор Happy Halloween">
+                    </div>
+                    <span class="popup-cart__subtitle">Набор Happy Halloween в две строки или в три строки название
+                        название название названиеназвание названиеназвание название</span>
+                    <div class="popup-cart__buy">
+                        <span class="item__price">4350</span>
+                        @@include('count.html')
+                    </div>
+
+                    <div class="popup-cart__options">
+                        <button class="btn item__like popup-cart__btn">
+                            <svg width="24" height="24">
+                                <use xlink:href="img/icons/sprites.svg#icon-like"></use>
+                            </svg>
+                            <span>В избранное</span>
+                        </button>
+                        <button class="btn popup-cart__btn">
+                            <svg width="30" height="30">
+                                <use xlink:href="img/icons/sprites.svg#icon-close"></use>
+                            </svg>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart__buy cart-buy">
+                <div class="cart-buy__promo promo">
+                    <input type="text" class="promo__input" placeholder="Промокод">
+                    <button type="button" class="btn btn__border promo__btn">Применить</button>
+                </div>
+                <div class="cart-buy__price">
+                    <span>Сумма заказа</span>
+                    <span class="item__price">7500</span>
+                    <span>Доставка</span>
+                    <span class="item__price">300</span>
+                </div>
+                <div class="cart-buy__summary">
+                    <span>итого</span>
+                    <span class="item__price">7800</span>
+                </div>
+                <button type="submit" class="btn btn__black btn-submit">оформить заказ</button>
+                <span class="cart-buy__agreement">Оформляя заказ, вы даете согласие на обработку персональных данных и соглашаетесь с <a href="#" title="#">политикой конфиденциальности</a></span>
+            </div>
+        </div>
+
+    </form>
+</section>

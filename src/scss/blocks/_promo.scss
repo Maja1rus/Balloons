@@ -1,0 +1,25 @@
+.promo {
+    display: flex;
+    gap: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.promo__input {
+    font-family: var(--font-montserrat);
+    padding: 10px;
+    margin: 0;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 252px;
+    border: 1px solid #E0E0E0;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.promo__btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: var(--size-normal-small);
+    font-weight: var(--font-medium);
+}

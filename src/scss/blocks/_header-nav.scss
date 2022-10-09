@@ -1,0 +1,121 @@
+.header-nav {
+    top: -5px;
+    left: 0;
+    transform: translate(-150%, 0);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .popup__close {
+        right: 40px;
+    }
+}
+
+.header-nav__content {
+    max-width: 400px;
+    padding-top: 70px;
+    padding-left: 34px;
+    padding-bottom: 100px;
+}
+
+.header-nav__title {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-size: var(--size-normal-big);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+    padding-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:before,
+    &::after {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 1px;
+        top: calc(50% - 15px);
+        top: 13px;
+        left: -25px;
+        background-color: var(--color-black);
+        transition: all 0.2s ease-in-out;
+    }
+
+    &::after {
+        left: -25px;
+        transform: rotate(90deg);
+    }
+
+    &:hover {
+        color: #9F9F9F;
+
+        &:before,
+        &::after {
+            background-color: #9F9F9F;
+        }
+    }
+}
+
+.header-nav__title.accordion__select {
+    &::after {
+        transform: rotate(0);
+    }
+}
+
+.header-nav__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: grid;
+    gap: 5px;
+}
+
+.header-nav__item {
+    padding-top: 9px;
+    padding-bottom: 9px;
+}
+
+.header-nav__link {
+    display: inline-block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    // text-transform: uppercase;
+    color: var(--color-black);
+    color: #4F4F4F;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: #9F9F9F;
+    }
+}
+
+@media screen and(min-width:621px) {
+
+    .header-nav__content {
+        padding-left: 80px;
+        padding-bottom: 300px;
+    }
+
+    .header-nav__title {
+
+        &:before {
+            left: -40px;
+        }
+
+        &::after {
+            left: -40px;
+        }
+    }
+}
+
+@media screen and(min-width:769px) {
+    .header-nav {
+        .popup__close {
+            right: 20px;
+        }
+    }
+
+}

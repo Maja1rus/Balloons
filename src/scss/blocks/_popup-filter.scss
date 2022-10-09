@@ -1,0 +1,111 @@
+.popup-filter {
+    top: 0;
+    right: 0;
+    position: fixed;
+    transform: translate(150%, 0);
+}
+
+.popup-filter__body {
+    position: absolute;
+    right: 0px;
+    max-width: 411px;
+    background-color: var(--color-white);
+    padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.popup-filter__wrap {
+    display: grid;
+}
+
+.popup-filter__item {
+    transition: all 1s ease;
+}
+
+.popup-filter__title.accordion__select+.popup-filter__item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.popup-filter__title {
+    position: relative;
+    font-size: var(--size-normal-18);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    width: 280px;
+    height: 60px;
+    border-bottom: 1px solid #F2F2F2;
+    cursor: pointer;
+
+    &:first-child {
+        border-top: 1px solid #F2F2F2;
+    }
+
+    &::after,
+    &::before {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 1px;
+        background-color: #1A1A1A;
+        right: 0;
+        top: 50%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &::before {
+        transform: rotate(90deg);
+    }
+}
+
+.popup-filter__title.accordion__select {
+    &::before {
+        transform: rotate(0);
+        transition: all 0.2s ease-in-out;
+    }
+}
+
+.popup-filter__btns {
+    position: sticky;
+    bottom: 0px;
+    display: grid;
+    justify-items: center;
+    gap: 5px;
+    padding-top: 20px;
+    background-color: var(--color-white);
+
+    .btn__black {
+        max-width: 240px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-transform: uppercase;
+    }
+}
+
+.popup-filter__reset {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 0.8125rem;
+    color: #6A6A6A;
+    text-decoration: underline dashed;
+}
+
+@media screen and(min-width:321px) {
+    .popup-filter__title {
+        width: 300px;
+    }
+}
+
+@media screen and(min-width:769px) {
+    .popup-filter__body {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .popup-filter__title {
+        width: 100%;
+    }
+}

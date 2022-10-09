@@ -1,0 +1,39 @@
+<div class="product-info">
+    <h1 class="product-info__title">Облако шаров с цифрой на 2 годика мальчику</h1>
+    <div class="product-info__state">
+        <span class="product-info__article">Артикул: CN260</span>
+        <!-- 
+            добавлять класс product-info__status--success если есть в наличии  
+            добавлять класс product-info__status--error если в наличии нет
+        -->
+        <span class="product-info__status product-info__status--success">
+            <svg width="24" height="24">
+                <use xlink:href="img/icons/sprites.svg#icon-check"></use>
+            </svg>
+            В наличи
+        </span>
+    </div>
+
+    <div class="product-info__buy">
+        <span class="product-info__price">4350 ₽</span>
+        @@include("count.html")
+    </div>
+    <div class="product-info__btns">
+        <a href="#" title="#" class="btn btn__black product-info__btn-buy" data-id="1234">
+            Купить
+        </a>
+        <button class="btn item__like product-info__like">
+            <svg width="24" height="24">
+                <use xlink:href="img/icons/sprites.svg#icon-like"></use>
+            </svg>
+            <span>В избранное</span>
+        </button>
+    </div>
+    <div class="product-info__text">
+        <span class="product-info__subtitle text-medium">В стоимость включены</span>
+        <span class="product-info__discription">обработка для длительного полёта Hi-Float, красивые грузики и стильные
+            ленты в подходящей палитре</span>
+    </div>
+    @@include('product-accordion.html')
+    @@include('product-questions.html')
+</div>

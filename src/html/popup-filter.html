@@ -1,0 +1,49 @@
+<form action="catalog.html" class="popup popup-filter filter__form">
+    <div class="popup__content popup-filter__content">
+        <div class="popup-filter__body">
+            <button class="btn popup__close" aria-label="Закрыть меню">
+                <span class="popup__icon"></span>
+            </button>
+            <div class="popup-filter__wrap  accordion">
+                <span class="popup-filter__title accordion__title">Цена</span>
+                <div class="popup-filter__item accordion__tab">
+                    @@include('filter-range.html', {
+                        "icon" : '₽',
+                        "min" : 86,
+                        "max" : 20000,
+                        "valuemin" : 86,
+                        "valuemax" : 12000,
+                        "step": "1000"
+                    })
+                </div>
+                <span class="popup-filter__title accordion__title">Шаров в наборе</span>
+                <div class="popup-filter__item accordion__tab">
+                    @@include('filter-range.html', {
+                        "icon" : 'шт',
+                        "min" : 1,
+                        "max" : 150,
+                        "valuemin" : 1,
+                        "valuemax" : 100,
+                        "step": "10"
+                    })
+                </div>
+                <span class="popup-filter__title accordion__title">Цвет</span>
+                <div class="popup-filter__item accordion__tab">
+                    @@include('filter-checkbox.html')
+                </div>
+                <span class="popup-filter__title accordion__title">Тематика</span>
+                <div class="popup-filter__item accordion__tab">
+                    @@include('filter-checkbox.html')
+                </div>
+                <span class="popup-filter__title accordion__title">Упорядочить</span>
+                <div class="popup-filter__item accordion__tab">
+                    @@include('filter-sorting.html')
+                </div>
+            </div>
+            <div class="popup-filter__btns">
+                <a href="#" title="#" class="btn btn__black">применить</a>
+                <button type="reset" class="btn popup-filter__reset">Сбросить все фильтры</button>
+            </div>
+        </div>
+    </div>
+</form>
